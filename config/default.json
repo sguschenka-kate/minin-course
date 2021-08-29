@@ -1,4 +1,6 @@
 {
-    "port": 5000,
-    "mongoUri": "mongodb+srv://kate:123qwe@cluster0.1m9ui.mongodb.net/app?retryWrites=true&w=majority"
+  "port": 5000,
+  "jwtSecret": "kate bilan bilan",
+  "mongoUri": "mongodb+srv://kate:123qwe@cluster0.1m9ui.mongodb.net/app?retryWrites=true&w=majority",
+  "baseUrl": "http://localhost:5000"
 }

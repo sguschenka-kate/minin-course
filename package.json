@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "server": "nodemon app.js"
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "sguschenka",
   "license": "ISC",
@@ -14,7 +16,9 @@
     "config": "^3.3.6",
     "express": "^4.17.1",
     "express-validator": "^6.12.1",
-    "mongoose": "^6.0.1"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.1",
+    "shortid": "^2.2.16"
   },
   "devDependencies": {
     "concurrently": "^6.2.1",
